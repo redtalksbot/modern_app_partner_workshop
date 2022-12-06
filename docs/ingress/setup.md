@@ -33,7 +33,7 @@ Now that you have forked the workshop repository, you'll want to clone the repo 
     git clone https://github.com/your_username/modern_app_partner_workshop.git modern_app_partner_workshop
 
     # via SSH
-    git clone git@github.com:your_username/aknot242/modern_app_partner_workshop.git modern_app_partner_workshop
+    git clone git@github.com:your_username/modern_app_partner_workshop.git modern_app_partner_workshop
     ```
 
 ## Uninstall K3s in UDF
