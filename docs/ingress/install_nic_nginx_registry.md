@@ -1,8 +1,8 @@
 # Install NGINX Plus Ingress Controller from the NGINX Private Container Registry
 
-For this step, we will pull the NGINX Plus Ingress Controller image from the official NGINX private registry and deploy it into your K3s deployment. The image used here includes NGINX App Protect WAF and DoS products.
+For this step, we will use Argo CD to pull the NGINX Plus Ingress Controller image from the official NGINX private registry and deploy it into your K3s deployment. The image used here includes NGINX App Protect WAF and DoS products.
 
-> **Note:** When you acquired the NGINX trial certificate and key files to satisfy the prerequisites of this lab, you were also presented with an option to download a JWT key associated with the trial. You will use this JWT key to create image pull credentials for this portion of the lab.
+> **Note:** You will need to use a JWT key associated with an NGINX trial. If you do hot have one, your instructor will provide it to you. You will use this JWT key to create image pull credentials for this portion of the lab.
 
 ## Create Kubernetes Secret
 

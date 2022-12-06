@@ -28,7 +28,7 @@ You will need to update the Brewz Argo CD manifest to match your environment.
       project: default
       source:
         path: manifests/brewz
-        repoURL: https://github.com/codygreen/modern_app_jumpstart_workshop.git
+        repoURL: https://github.com/codygreen/modern_app_partner_workshop.git
         targetRevision: HEAD
       destination:
         namespace: default

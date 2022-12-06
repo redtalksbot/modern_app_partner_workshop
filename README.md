@@ -1,4 +1,4 @@
-# Modern Applications Jumpstart Workshop
+# Modern Applications Jumpstart Workshop for Partners
 
 This repository contains the content for the F5 Modern Applications Jumpstart Workshop.
 

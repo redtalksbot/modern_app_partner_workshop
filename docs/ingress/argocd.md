@@ -64,4 +64,4 @@ In our workshop, we will use Argo CD to deploy our microservices and resources.
 
 ## Next Steps
 
-Next, you will [build the NGINX Plus Ingress Controller](build_nic.md)
+Now you can [install the NGINX Plus Ingress Controller](install_nic_nginx_registry.md)

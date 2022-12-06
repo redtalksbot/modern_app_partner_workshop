@@ -1,7 +1,7 @@
 
 # Setup
 
-For this lab, you will start with a clean environment and build out your K3s environment.
+In the blueprint this lab is using, K3s is already installed. However, for this lab, you will start with a clean environment and build out your K3s environment.
 
 ## Uninstall K3s in UDF
 
