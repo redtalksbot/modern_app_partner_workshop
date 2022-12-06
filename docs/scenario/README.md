@@ -18,7 +18,7 @@ The existing Brewz application runs on a single virtual machine, and is deployed
 
 It should be clear that this application is highly dependent on its REST API, so speed and reliability of this API are very important.
 
-## Lab 1 Missions
+## Lab Missions
 
 **Mission 1:**
 

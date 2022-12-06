@@ -1,4 +1,4 @@
-# Lab 2: K8s Ingress
+# Lab: K8s Ingress
 
 In this lab you will build and deploy the NGINX Plus container
 
