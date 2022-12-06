@@ -2,7 +2,9 @@
 
 [Argo CD](https://argoproj.github.io/cd/) is a declarative, GitOps continuous delivery tool for Kubernetes.
 
-In our workshop, we will use Argo CD to deploy our microservices and resources.
+## GitOps with Argo CD
+
+We will be practicing [GitOps](https://www.gitops.tech/) for [Continuous Deployment](https://en.wikipedia.org/wiki/Continuous_deployment) of our applications. [Argo CD](https://argo-cd.readthedocs.io/en/stable/) is the tool we will be using to watch your forked repository for changes, and automatically deploy updated resources to Kubernetes for you.
 
 ## Install Argo CD
 
