@@ -1,9 +1,44 @@
 
 # Setup
 
-In the blueprint this lab is using, K3s is already installed. However, for this lab, you will start with a clean environment and build out your K3s environment.
+## Deploy the Microservices Workshop UDF Blueprint
+
+1. Open the [Microservices Workshop UDF Blueprint](https://udf.f5.com/b/792c428c-89f6-440e-b068-3d99a471fd9c#documentation) and deploy it in the region geographically closest to you. Start the deployment with the default suggested resource settings.
+
+## Fork the workshop repository
+
+1. To proceed with this scenario, you will need to fork the workshop repository to your GitHub account.  If this is your first time, then take a few minutes to review the [GitHub Docs on how to Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+
+    You can complete this task through the [repository GitHub UI](https://github.com/aknot242/modern_app_partner_workshop):
+    ![GitHub Fork](../assets/gh_fork.png)
+
+    or via the GitHub CLI:
+
+    ```bash
+    gh repo fork --clone aknot242/modern_app_partner_workshop
+    ```
+
+## Clone your workshop repository to your laptop
+
+Now that you have forked the workshop repository, you'll want to clone the repo to your local laptop.  
+
+1. Perform this via the git or GitHub CLI commands.
+
+    > **Note:** Make sure to replace your_username with your GitHub username.
+
+    > **Note:** If you have not [configured GitHub authentication](https://docs.github.com/en/authentication) with your local laptop, please stop and do that now.
+
+    ```bash
+    # via HTTPS
+    git clone https://github.com/your_username/modern_app_partner_workshop.git modern_app_partner_workshop
+
+    # via SSH
+    git clone git@github.com:your_username/aknot242/modern_app_partner_workshop.git modern_app_partner_workshop
+    ```
 
 ## Uninstall K3s in UDF
+
+In the blueprint this lab is using, K3s is already installed. However, for this lab, you will start with a clean environment and build out your K3s environment.
 
 1. SSH into the K3s server using the UDF *SSH* or *Web Shell* Access Methods and run the following commands:
 
