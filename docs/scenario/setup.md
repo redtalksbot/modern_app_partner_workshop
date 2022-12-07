@@ -42,6 +42,13 @@ Now that you have forked the workshop repository, you'll want to clone the repo 
     git clone git@github.com:your_username/modern_app_partner_workshop.git modern_app_partner_workshop
     ```
 
+1. If you are using GitHub for the first time from your laptop, you will need to set your commit Name and Email:
+
+    ```bash
+    git config --global user.name "<your name>"
+    git config --global user.email "<your email address>"
+    ```
+
 ## Generate Local Kubeconfig
 
 To access the K8s API, you will need to download a kubeconfig file from the K3s server in your UDF blueprint.
