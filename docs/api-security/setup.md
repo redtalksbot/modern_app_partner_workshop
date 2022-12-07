@@ -9,13 +9,13 @@
 
 1. To proceed with this scenario, you will need to fork the workshop repository to your GitHub account.  If this is your first time, then take a few minutes to review the [GitHub Docs on how to Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
-    You can complete this task through the [repository GitHub UI](https://github.com/f5devcentral/modern_app_jumpstart_workshop):
-    ![GitHub Fork](../assets/gh_fork.jpg)
+    You can complete this task through the [repository GitHub UI](https://github.com/aknot242/modern_app_partner_workshop):
+    ![GitHub Fork](../assets/gh_fork.png)
 
     or via the GitHub CLI:
 
     ```bash
-    gh repo fork --clone f5devcentral/modern_app_jumpstart_workshop
+    gh repo fork --clone aknot242/modern_app_partner_workshop
     ```
 
     > **Note:** If you have completed earlier labs in this workshop, you have already forked this repository. If this is the case, you may skip this step.
@@ -32,10 +32,10 @@ Now that you have forked the workshop repository, you'll want to clone the repo 
 
     ```bash
     # via HTTPS
-    git clone https://github.com/your_username/modern_app_jumpstart_workshop.git modern_app_jumpstart_workshop
+    git clone https://github.com/your_username/modern_app_partner_workshop.git modern_app_partner_workshop
 
     # via SSH
-    git clone git@github.com:your_username/modern_app_jumpstart_workshop.git modern_app_jumpstart_workshop
+    git clone git@github.com:your_username/modern_app_partner_workshop.git modern_app_partner_workshop
     ```
 
     > **Note:** If you have completed earlier labs in this workshop, you will need to update your fork from the upstream repository. It is a destructive operation, but this can be accomplished by running the following commands on your local machine:
@@ -50,10 +50,10 @@ Now that you have forked the workshop repository, you'll want to clone the repo 
     git push origin main --force
     ```
 
-    > **Note:** If the **git pull upstream** command fails, you may need to add a new connection record to the modern_app_jumpstart_workshop repo. This can be accomplished by running the following command on your local machine:
+    > **Note:** If the **git pull upstream** command fails, you may need to add a new connection record to the modern_app_partner_workshop repo. This can be accomplished by running the following command on your local machine:
 
     ```bash
-    git remote add upstream https://github.com/f5devcentral/modern_app_jumpstart_workshop
+    git remote add upstream https://github.com/aknot242/modern_app_partner_workshop
     ```
 
 ## Run setup script
@@ -175,7 +175,7 @@ You will need to update the Brewz Argo CD manifest to match your environment.
       project: default
       source:
         path: manifests/brewz
-        repoURL: https://github.com/codygreen/modern_app_jumpstart_workshop.git
+        repoURL: https://github.com/codygreen/modern_app_partner_workshop.git
         targetRevision: HEAD
       destination:
         namespace: default
