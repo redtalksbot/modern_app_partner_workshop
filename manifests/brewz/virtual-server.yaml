@@ -23,6 +23,9 @@ spec:
     - name: spa-dark
       service: spa-dark
       port: 80
+    - name: recommendations-v2
+      service: recommendations-v2
+      port: 8001
   routes:
     - path: /
       matches:
@@ -54,10 +57,18 @@ spec:
           upstream: inventory
           rewritePath: /api/inventory
     - path: /api/recommendations
-      action:
-        proxy:
-          upstream: recommendations
-          rewritePath: /api/recommendations
+      splits:
+        - weight: 90
+          action:
+            proxy:
+              upstream: recommendations
+              rewritePath: /api/recommendations
+        - weight: 10
+          action:
+            proxy:
+              upstream: recommendations-v2
+              rewritePath: /api/recommendations
+
     - path: /images
       action:
         proxy:
