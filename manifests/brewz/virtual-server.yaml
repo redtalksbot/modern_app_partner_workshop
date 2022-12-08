@@ -5,6 +5,8 @@ metadata:
   name: brewz
 spec:
   host: brewz.f5demo.com
+  tls:
+    secret: brewz-tls
   upstreams:
     - name: spa
       service: spa
